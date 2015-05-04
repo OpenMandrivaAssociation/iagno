@@ -35,7 +35,7 @@ on the board.
 %find_lang %{name} --with-gnome
 
 %files -f %{name}.lang
-%license COPYING
+%doc COPYING
 %{_bindir}/%{name}
 %{_datadir}/applications/%{name}.desktop
 %{_datadir}/glib-2.0/schemas/org.gnome.%{name}.gschema.xml
