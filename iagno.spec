@@ -41,6 +41,7 @@ on the board.
 %{_datadir}/glib-2.0/schemas/org.gnome.%{name}.gschema.xml
 %{_datadir}/%{name}/
 %{_iconsdir}/*/*/apps/%{name}.png
+%{_iconsdir}/*/*/apps/%{name}-symbolic.svg
 %{_mandir}/man6/%{name}.6*
 %{_datadir}/appdata/%{name}.appdata.xml
 
