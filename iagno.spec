@@ -2,7 +2,7 @@
 
 Name:		iagno
 Version:	3.16.1
-Release:	2
+Release:	3
 Summary:	GNOME Reversi game
 License:	GPLv2+ and CC-BY-SA
 Group:		Games/Boards
