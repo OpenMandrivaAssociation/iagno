@@ -1,8 +1,9 @@
 %define url_ver	%(echo %{version}|cut -d. -f1,2)
+%define _disable_rebuild_configure 1
 
 Name:		iagno
-Version:	3.16.1
-Release:	3
+Version:	3.18.2
+Release:	1
 Summary:	GNOME Reversi game
 License:	GPLv2+ and CC-BY-SA
 Group:		Games/Boards

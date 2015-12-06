@@ -1,4 +1,5 @@
 removed_sources:
   iagno-3.14.2.tar.xz: 54aa4860c7ad93840212f03230976e56c6ff6f31
-sources:
   iagno-3.16.1.tar.xz: 857924911c0546e721169d8cfbad9cf20c0438f3
+sources:
+  iagno-3.18.2.tar.xz: 79263a0c7f96d4e8e274ff6c55b1950b75d02a6f
