@@ -2,8 +2,8 @@
 %define _disable_rebuild_configure 1
 
 Name:		iagno
-Version:	3.30.0
-Release:	2
+Version:	3.32.0
+Release:	1
 Summary:	GNOME Reversi game
 License:	GPLv2+ and CC-BY-SA
 Group:		Games/Boards
@@ -15,6 +15,7 @@ BuildRequires:	pkgconfig(librsvg-2.0) >= 2.32.0
 BuildRequires:	intltool
 BuildRequires:	itstool
 BuildRequires:	libxml2-utils
+BuildRequires:  meson
 Obsoletes:	iagno-extra-data
 # for help
 Requires:	yelp
@@ -27,11 +28,11 @@ on the board.
 %setup -q
 
 %build
-%configure
-%make
+%meson
+%meson_build
 
 %install
-%makeinstall_std
+%meson_install
 
 %find_lang %{name} --with-gnome
 
