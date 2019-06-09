@@ -16,6 +16,8 @@ BuildRequires:	intltool
 BuildRequires:	itstool
 BuildRequires:	libxml2-utils
 BuildRequires:  meson
+BuildRequires:  vala
+BuildRequires:  pkgconfig(vapigen)
 Obsoletes:	iagno-extra-data
 # for help
 Requires:	yelp
