@@ -2,8 +2,8 @@
 %define _disable_rebuild_configure 1
 
 Name:		iagno
-Version:	3.30.0
-Release:	2
+Version:	3.33.2
+Release:	1
 Summary:	GNOME Reversi game
 License:	GPLv2+ and CC-BY-SA
 Group:		Games/Boards
@@ -14,7 +14,10 @@ BuildRequires:	pkgconfig(libcanberra-gtk3) >= 0.26
 BuildRequires:	pkgconfig(librsvg-2.0) >= 2.32.0
 BuildRequires:	intltool
 BuildRequires:	itstool
+BuildRequires:	meson
 BuildRequires:	libxml2-utils
+BuildRequires:	vala-devel
+BuildRequires:	librsvg-vala-devel
 Obsoletes:	iagno-extra-data
 # for help
 Requires:	yelp
@@ -27,21 +30,21 @@ on the board.
 %setup -q
 
 %build
-%configure
-%make
+%meson
+%meson_build
 
 %install
-%makeinstall_std
+%meson_install
 
 %find_lang %{name} --with-gnome
 
 %files -f %{name}.lang
 %doc COPYING
 %{_bindir}/%{name}
-%{_datadir}/applications/%{name}.desktop
-%{_datadir}/glib-2.0/schemas/org.gnome.%{name}.gschema.xml
+%{_datadir}/applications/*.desktop
+%{_datadir}/glib-2.0/schemas/org.gnome.*.gschema.xml
 %{_datadir}/%{name}/
-%{_iconsdir}/*/*/apps/%{name}.png
-%{_iconsdir}/*/*/apps/%{name}-symbolic.svg
+%{_iconsdir}/*/*/apps/*.png
+%{_iconsdir}/*/*/apps/*.svg
 %{_mandir}/man6/%{name}.6*
-%{_datadir}/metainfo/%{name}.appdata.xml
+%{_datadir}/metainfo/*.xml
