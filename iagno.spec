@@ -2,7 +2,7 @@
 %define _disable_rebuild_configure 1
 
 Name:		iagno
-Version:	3.33.2
+Version:	3.34.2
 Release:	1
 Summary:	GNOME Reversi game
 License:	GPLv2+ and CC-BY-SA
@@ -12,11 +12,15 @@ Source0:	https://download.gnome.org/sources/%{name}/%{url_ver}/%{name}-%{version
 BuildRequires:	pkgconfig(gtk+-3.0) >= 3.4.0
 BuildRequires:	pkgconfig(libcanberra-gtk3) >= 0.26
 BuildRequires:	pkgconfig(librsvg-2.0) >= 2.32.0
+BuildRequires:  librsvg-vala-devel
+BuildRequires:  pkgconfig(gsound)
+BuildRequires:  cmake
 BuildRequires:	intltool
 BuildRequires:	itstool
 BuildRequires:	meson
 BuildRequires:	libxml2-utils
-BuildRequires:	vala-devel
+BuildRequires:  vala
+BuildRequires:  pkgconfig(vapigen)
 BuildRequires:	librsvg-vala-devel
 Obsoletes:	iagno-extra-data
 # for help
@@ -41,10 +45,10 @@ on the board.
 %files -f %{name}.lang
 %doc COPYING
 %{_bindir}/%{name}
-%{_datadir}/applications/*.desktop
-%{_datadir}/glib-2.0/schemas/org.gnome.*.gschema.xml
+%{_datadir}/applications/org.gnome.Reversi.desktop
+%{_datadir}/glib-2.0/schemas/org.gnome.Reversi.gschema.xml
 %{_datadir}/%{name}/
-%{_iconsdir}/*/*/apps/*.png
-%{_iconsdir}/*/*/apps/*.svg
+%{_iconsdir}/*/*/apps/org.gnome.Reversi.png
+%{_iconsdir}/*/*/apps/org.gnome.Reversi-symbolic.svg
 %{_mandir}/man6/%{name}.6*
-%{_datadir}/metainfo/*.xml
+%{_datadir}/metainfo/org.gnome.Reversi.appdata.xml
