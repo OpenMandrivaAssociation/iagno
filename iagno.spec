@@ -17,10 +17,11 @@ BuildRequires:  pkgconfig(gsound)
 BuildRequires:  cmake
 BuildRequires:	intltool
 BuildRequires:	itstool
+BuildRequires:	meson
 BuildRequires:	libxml2-utils
-BuildRequires:  meson
 BuildRequires:  vala
 BuildRequires:  pkgconfig(vapigen)
+BuildRequires:	librsvg-vala-devel
 Obsoletes:	iagno-extra-data
 # for help
 Requires:	yelp
