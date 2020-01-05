@@ -44,10 +44,10 @@ on the board.
 %files -f %{name}.lang
 %doc COPYING
 %{_bindir}/%{name}
-%{_datadir}/applications/%{name}.desktop
-%{_datadir}/glib-2.0/schemas/org.gnome.%{name}.gschema.xml
+%{_datadir}/applications/org.gnome.Reversi.desktop
+%{_datadir}/glib-2.0/schemas/org.gnome.Reversi.gschema.xml
 %{_datadir}/%{name}/
-%{_iconsdir}/*/*/apps/%{name}.png
-%{_iconsdir}/*/*/apps/%{name}-symbolic.svg
+%{_iconsdir}/*/*/apps/org.gnome.Reversi.png
+%{_iconsdir}/*/*/apps/org.gnome.Reversi-symbolic.svg
 %{_mandir}/man6/%{name}.6*
-%{_datadir}/metainfo/%{name}.appdata.xml
+%{_datadir}/metainfo/org.gnome.Reversi.appdata.xml
