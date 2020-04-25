@@ -52,3 +52,4 @@ on the board.
 %{_iconsdir}/*/*/apps/org.gnome.Reversi-symbolic.svg
 %{_mandir}/man6/%{name}.6*
 %{_datadir}/metainfo/org.gnome.Reversi.appdata.xml
+%{_datadir}/dbus-1/services/org.gnome.Reversi.service
