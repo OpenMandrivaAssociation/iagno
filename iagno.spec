@@ -50,6 +50,7 @@ on the board.
 %{_datadir}/%{name}/
 #{_iconsdir}/*/*/apps/org.gnome.Reversi.png
 %{_iconsdir}/*/*/apps/org.gnome.Reversi-symbolic.svg
+%{_datadir}/icons/hicolor/scalable/apps/org.gnome.Reversi.svg
 %{_mandir}/man6/%{name}.6*
 %{_datadir}/metainfo/org.gnome.Reversi.appdata.xml
 %{_datadir}/dbus-1/services/org.gnome.Reversi.service
