@@ -48,7 +48,7 @@ on the board.
 %{_datadir}/applications/org.gnome.Reversi.desktop
 %{_datadir}/glib-2.0/schemas/org.gnome.Reversi.gschema.xml
 %{_datadir}/%{name}/
-%{_iconsdir}/*/*/apps/org.gnome.Reversi.png
+#{_iconsdir}/*/*/apps/org.gnome.Reversi.png
 %{_iconsdir}/*/*/apps/org.gnome.Reversi-symbolic.svg
 %{_mandir}/man6/%{name}.6*
 %{_datadir}/metainfo/org.gnome.Reversi.appdata.xml
