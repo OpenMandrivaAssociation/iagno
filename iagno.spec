@@ -2,7 +2,7 @@
 %define _disable_rebuild_configure 1
 
 Name:		iagno
-Version:	3.38.0
+Version:	3.38.1
 Release:	1
 Summary:	GNOME Reversi game
 License:	GPLv2+ and CC-BY-SA
