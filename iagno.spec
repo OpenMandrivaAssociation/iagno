@@ -23,7 +23,7 @@ BuildRequires:	libxml2-utils
 BuildRequires:  vala
 BuildRequires:  pkgconfig(vapigen)
 BuildRequires:	librsvg-vala-devel
-BuildRequires:	pkgconfig(lzo2)
+
 Obsoletes:	iagno-extra-data
 # for help
 Requires:	yelp
