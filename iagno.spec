@@ -1,9 +1,10 @@
 %define url_ver	%(echo %{version}|cut -d. -f1,2)
 %define _disable_rebuild_configure 1
+%define ltstgt	20211230
 
 Name:		iagno
 Version:	3.38.1
-Release:	2
+Release:	2.%{ltstgt}.0
 Summary:	GNOME Reversi game
 License:	GPLv2+ and CC-BY-SA
 Group:		Games/Boards
@@ -22,6 +23,7 @@ BuildRequires:	libxml2-utils
 BuildRequires:  vala
 BuildRequires:  pkgconfig(vapigen)
 BuildRequires:	librsvg-vala-devel
+BuildRequires:	pkgconfig(lzo2)
 Obsoletes:	iagno-extra-data
 # for help
 Requires:	yelp
