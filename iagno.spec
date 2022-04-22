@@ -16,6 +16,7 @@ BuildRequires:	pkgconfig(librsvg-2.0) >= 2.32.0
 BuildRequires:  librsvg-vala-devel
 BuildRequires:  pkgconfig(gsound)
 BuildRequires:  cmake
+BuildRequires:  gettext
 BuildRequires:	intltool
 BuildRequires:	itstool
 BuildRequires:	meson
