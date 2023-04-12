@@ -10,6 +10,7 @@ License:	GPLv2+ and CC-BY-SA
 Group:		Games/Boards
 URL:		https://wiki.gnome.org/Iagno
 Source0:	https://download.gnome.org/sources/%{name}/%{url_ver}/%{name}-%{version}.tar.xz
+https://gitlab.gnome.org/GNOME/iagno/-/commit/851a9ad72a2d31b8e7f21d59a1cccca344e5871e.patch
 BuildRequires:	pkgconfig(gtk+-3.0) >= 3.4.0
 BuildRequires:	pkgconfig(libcanberra-gtk3) >= 0.26
 BuildRequires:	pkgconfig(librsvg-2.0) >= 2.32.0
@@ -34,7 +35,7 @@ The GNOME version of Reversi. The goal is to control the most disks
 on the board.
 
 %prep
-%setup -q
+%autosetup -p1
 
 %build
 %meson
