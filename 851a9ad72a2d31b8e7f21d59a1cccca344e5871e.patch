@@ -1,0 +1,24 @@
+From 851a9ad72a2d31b8e7f21d59a1cccca344e5871e Mon Sep 17 00:00:00 2001
+From: =?UTF-8?q?Tomasz=20K=C5=82oczko?= <kloczek@github.com>
+Date: Tue, 1 Nov 2022 07:38:26 +0100
+Subject: [PATCH] help: Drop duplicated "id" in LINGUAS
+
+Fixes https://gitlab.gnome.org/GNOME/iagno/issues/21
+---
+ help/LINGUAS | 1 -
+ 1 file changed, 1 deletion(-)
+
+diff --git a/help/LINGUAS b/help/LINGUAS
+index b6fffb4a..967ed2f7 100644
+--- a/help/LINGUAS
++++ b/help/LINGUAS
+@@ -9,7 +9,6 @@ fr
+ gl
+ hu
+ id
+-id
+ ko
+ pl
+ pt_BR
+-- 
+GitLab
