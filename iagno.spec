@@ -2,6 +2,8 @@
 %define _disable_rebuild_configure 1
 %define ltstgt	20211230
 
+%global optflags %{optflags} -Wno-incompatible-function-pointer-types
+
 Name:		iagno
 Version:	3.38.1
 Release:	3.%{ltstgt}.0
