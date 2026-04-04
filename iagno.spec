@@ -1,19 +1,19 @@
 %define url_ver	%(echo %{version}|cut -d. -f1,2)
 %define _disable_rebuild_configure 1
-%define ltstgt	20211230
 
 %global optflags %{optflags} -Wno-incompatible-function-pointer-types
 
 Name:		iagno
-Version:	3.38.1
-Release:	5.%{ltstgt}.0
+Version:	50.0
+Release:	1
 Summary:	GNOME Reversi game
 License:	GPLv2+ and CC-BY-SA
 Group:		Games/Boards
 URL:		https://wiki.gnome.org/Iagno
 Source0:	https://download.gnome.org/sources/%{name}/%{url_ver}/%{name}-%{version}.tar.xz
-Patch:    https://gitlab.gnome.org/GNOME/iagno/-/commit/851a9ad72a2d31b8e7f21d59a1cccca344e5871e.patch
-BuildRequires:	pkgconfig(gtk+-3.0) >= 3.4.0
+BuildRequires:	pkgconfig(gtk4)
+BuildRequires:  pkgconfig(glycin-gtk4-2)
+BuildRequires:  pkgconfig(libadwaita-1)
 BuildRequires:	pkgconfig(libcanberra-gtk3) >= 0.26
 BuildRequires:	pkgconfig(librsvg-2.0) >= 2.32.0
 BuildRequires:  librsvg-vala-devel
@@ -23,7 +23,7 @@ BuildRequires:  gettext
 BuildRequires:	intltool
 BuildRequires:	itstool
 BuildRequires:	meson
-BuildRequires:	libxml2-utils
+BuildRequires:	libxml2-utils >= 2.15.2
 BuildRequires:  vala
 BuildRequires:  pkgconfig(vapigen)
 BuildRequires:	librsvg-vala-devel
@@ -54,9 +54,8 @@ on the board.
 %{_datadir}/applications/org.gnome.Reversi.desktop
 %{_datadir}/glib-2.0/schemas/org.gnome.Reversi.gschema.xml
 %{_datadir}/%{name}/
-#{_iconsdir}/*/*/apps/org.gnome.Reversi.png
 %{_iconsdir}/*/*/apps/org.gnome.Reversi-symbolic.svg
 %{_datadir}/icons/hicolor/scalable/apps/org.gnome.Reversi.svg
 %{_mandir}/man6/%{name}.6*
-%{_datadir}/metainfo/org.gnome.Reversi.appdata.xml
+%{_datadir}/metainfo/org.gnome.Reversi.metainfo.xml
 %{_datadir}/dbus-1/services/org.gnome.Reversi.service
